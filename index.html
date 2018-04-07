@@ -8,7 +8,7 @@
 
 		<!-- Информация об Авторе и описание проекта -->
 		<meta name="description" content="">
-		<meta name="auyhor" content="">
+		<meta name="author" content="">
 
 		<!-- Иконка, которая будет на вкладке в браузере -->
 		<link rel="icon" href="/favicon.ico">
@@ -19,6 +19,7 @@
 		<!-- Подключаем наш файл со стилями, который находится в папке css-->
 		<link rel="stylesheet" href="css/bootstrap-grid.min.css">
 		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/animate.css">
 </head>
 
 <body>
@@ -27,15 +28,18 @@
  	 	<div class="container">
  			<div class="row">
  				<div class="col-lg-7">
- 				<img class="header-img" src="img/main-img.png" alt="Монитор">
+ 				<img class="header-img  wow  zoomIn" src="img/main-img.png" alt="Монитор">
  				</div>
  				<!-- /.col-7 -->
  				<div class="col-lg-5">
- 				<p class="header-pretitle">Веб-разработчик</p>
- 				<h1 class="header-title">Леонид Соловьёв</h1>
- 				<p class="header-subtitle">Верстка на HTML/CSS
+ 				<p class="header-pretitle  wow fadeInRightBig"
+ 				data-wow-delay="0.1s">Веб-разработчик</p>
+ 				<h1 class="header-title  wow fadeInRightBig"
+ 				data-wow-delay="0.3s">Леонид Соловьёв</h1>
+ 				<p class="header-subtitle  wow fadeInRightBig"
+ 				data-wow-delay="0.5s">Верстка на HTML/CSS
 				<br>Разработка сайтов под ключ</p>
-				<div class="header-button-block"><a href="https://vk.com/leonid.solovyov" class="header-button">Связаться</a>
+				<div class="header-button-block  wow fadeInRightBig" data-wow-delay="0.7s"><a href="https://vk.com/leonid.solovyov" class="header-button">Связаться</a>
 				<small>*Это бесплатно</small></div>
 				<!-- /.header-button-block -->
  				</div>
@@ -47,7 +51,7 @@
  </header>
  <section class="portfolio">
  	<div class="container">	
- 		<div class="portfolio-block">
+ 		<div class="portfolio-block  wow fadeIn">
 		<h2 class="portfolio-title">Портфолио</h2>
 		<p class="portfolio-subtitle">Мои работы</p>
 			<div class="row">
@@ -88,10 +92,10 @@
  			<div class="col-md-4">
  				<div class="social-block">
  					<p>Подпишитесь:</p>
- 					<a href="#"><img src="img/socials/facebook-logo-button.png" alt="facebook"/></a>
- 					<a href="#"><img src="img/socials/telegram-symbol.png" alt="telegram" /></a>
- 					<a href="#"><img src="img/socials/vk-social-logotype.png" alt="vk"/></a>
- 					<a href="#"><img src="img/socials/youtube-symbol.png" alt="youtube"/></a>
+ 					<a class="wow bounceInDown" data-wow-delay="0.1s" href="#"><img  src="img/socials/facebook-logo-button.png" alt="facebook"/></a>
+ 					<a class="wow bounceInDown" data-wow-delay="0.2s" href="#"><img  src="img/socials/telegram-symbol.png" alt="telegram" /></a>
+ 					<a class="wow bounceInDown" data-wow-delay="0.3s" href="#"><img  src="img/socials/vk-social-logotype.png" alt="vk"/></a>
+ 					<a class="wow bounceInDown" data-wow-delay="0.4s" href="#"><img  src="img/socials/youtube-symbol.png" alt="youtube"/></a>
  				</div>
  			</div>
  			<!-- /.col-4 -->
@@ -107,6 +111,9 @@
  	</div>
  	<!-- /.container -->
  </footer>
-
+	<script src="js/wow.min.js"></script>
+	<script>
+		new WOW().init();
+	</script>
 </body>
 </html>
